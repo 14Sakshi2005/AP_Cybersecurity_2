@@ -1,79 +1,37 @@
-# AP_Cybersecurity_2
-GVM Scan on Metasploitable2
-# Vulnerability Assessment using GVM
+#  Vulnerability Assessment using GVM
 
-## Objective
+##  Overview
+This project demonstrates a vulnerability assessment performed on a deliberately vulnerable system using Greenbone Vulnerability Management (GVM).
 
-To perform vulnerability assessment on a target system using Greenbone Vulnerability Management (GVM) and analyze security weaknesses.
+##  Objective
+To identify, analyze, and report security vulnerabilities in a target machine.
 
+##  Tech Stack
+- Kali Linux
+- GVM (Greenbone Vulnerability Management)
+- Nmap
+- Metasploitable 2
 
+##  Target Information
+- IP Address: 192.168.64.4
 
-##  Tools Used
+##  Workflow
+1. Reconnaissance using ping and Nmap  
+2. Vulnerability scanning using GVM  
+3. Analysis of results (CVE, severity levels)
 
-* Kali Linux
-* GVM (Greenbone Vulnerability Management)
-* Metasploitable 2
+##  Results
+Multiple vulnerabilities were detected and categorized into different severity levels.
 
-
-
-##  Target Details
-
-* Target Machine: Metasploitable 2
-* IP Address: 192.168.64.4
-
-
-##  Methodology
-
-### 1. Reconnaissance
-
-* Verified connectivity using ping
-* Performed port scanning using Nmap
-
-### 2. Vulnerability Scanning
-
-* Started GVM services
-* Created target and task
-* Used **Full and Fast** scan configuration
-
-### 3. Analysis
-
-* Identified vulnerabilities based on severity levels:
-
-  * Critical
-  * High
-  * Medium
-  * Low
-
-
-
-##  Results Summary
-
-* Multiple vulnerabilities were detected on the target system
-* Each vulnerability includes:
-
-  * CVE ID
-  * Severity level
-  * Description
-  * Possible solution
-
-
-
-##  Report
-
-The detailed vulnerability report is attached in this repository as a PDF file.
-
-
+##  Files Included
+- GVM_Report.pdf
+- report.md
+- screenshots/
 
 ##  Learning Outcomes
-
-* Learned how to perform vulnerability scanning
-* Understood CVE and severity classification
-* Gained hands-on experience with GVM
-* Learned how real-world security assessments are conducted
-
-
+- Learned vulnerability scanning process  
+- Understood CVE classification  
+- Gained hands-on experience with GVM  
 
 ##  Conclusion
-
-This project demonstrates how vulnerability assessment tools can be used to identify and analyze security flaws in a system, helping improve overall cybersecurity posture.
-
+This project demonstrates how vulnerability assessment helps identify and mitigate security risks.
