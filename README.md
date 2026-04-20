@@ -1,37 +1,82 @@
-#  Vulnerability Assessment using GVM
+#  Vulnerability Assessment using GVM  
 
-##  Overview
-This project demonstrates a vulnerability assessment performed on a deliberately vulnerable system using Greenbone Vulnerability Management (GVM).
+<p align="center">
+  <img src="https://img.shields.io/badge/Tool-GVM%20(OpenVAS)-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Platform-Kali%20Linux-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Target-Metasploitable2-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge">
+</p>
 
-##  Objective
-To identify, analyze, and report security vulnerabilities in a target machine.
 
-##  Tech Stack
-- Kali Linux
-- GVM (Greenbone Vulnerability Management)
-- Nmap
-- Metasploitable 2
+##  Overview  
+This project demonstrates a **comprehensive vulnerability assessment** performed on an intentionally vulnerable system using **Greenbone Vulnerability Management (GVM / OpenVAS)**.  
 
-##  Target Information
-- IP Address: 192.168.64.4
+It covers the complete workflow from **reconnaissance → scanning → vulnerability analysis → reporting**.
 
-##  Workflow
-1. Reconnaissance using ping and Nmap  
-2. Vulnerability scanning using GVM  
-3. Analysis of results (CVE, severity levels)
 
-##  Results
-Multiple vulnerabilities were detected and categorized into different severity levels.
+##  Objective  
+- Identify security vulnerabilities in a target system  
+- Analyze vulnerabilities using CVE data and severity levels  
+- Document findings in a structured and professional format  
 
-##  Files Included
-- GVM_Report.pdf
-- report.md
-- screenshots/
 
-##  Learning Outcomes
-- Learned vulnerability scanning process  
-- Understood CVE classification  
-- Gained hands-on experience with GVM  
+##  Tech Stack  
 
-##  Conclusion
-This project demonstrates how vulnerability assessment helps identify and mitigate security risks.
+| Tool | Purpose |
+|------|--------|
+|  Kali Linux | Attacker Environment |
+|  GVM (OpenVAS) | Vulnerability Scanning |
+|  Nmap | Network Scanning & Enumeration |
+|  Metasploitable2 | Vulnerable Target Machine |
+
+
+##  Target Information  
+
+- **IP Address:** `192.168.64.4`  
+- **Environment:** Virtual Lab (UTM)  
+
+
+##  Methodology  
+
+### 1. Reconnaissance  
+- Verified host availability using ping  
+- Performed port scanning using Nmap  
+
+```bash
+ping 192.168.64.4
+nmap -sS -sV 192.168.64.4
+```
+
+### 2. Vulnerability Scanning
+
+      - Configured GVM (OpenVAS)
+      - Created and launched scan task
+      - Used Full and Fast Scan Profile
+      - Targeted the system for vulnerability detection
+
+### 3. Analysis
+
+      - Reviewed scan results
+      - Categorized vulnerabilities based on severity:
+              🔴 Critical
+              🟠 High
+              🟡 Medium
+              🔵 Low
+      - Analyzed associated CVE IDs
+
+
+### Results
+✔ Multiple vulnerabilities detected
+✔ Services exposed with known weaknesses
+✔ Risks categorized based on severity levels
+
+Report: gvm_scan_report.pdf
+
+Note: Metasploitable2 is intentionally vulnerable, so high-severity issues are expected.
+
+ screenshots/4.1 (open port details).png
+
+ screenshots/7.png
+
+ screenshots/8.png
+
